@@ -1,1 +1,1 @@
-web: ./target/release/bot
+worker: ./target/release/bot
