@@ -91,7 +91,9 @@ fn rand(ctx: &mut Context, msg: &Message) -> CommandResult {
 
     let question = read_to_string(file_name).unwrap();
 
-    let question_number = &format!("{:?}", file_name)[13..-1];
+    let question_number = format!("{:?}", file_name);
+
+    let question_number = &question_number[13..question_number.len() - 1];
 
     msg.reply(
         &ctx,
