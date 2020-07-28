@@ -20,6 +20,3 @@ used to model the probability that a user will stop searching.
 
 Given a directed graph of links between various websites, write a program that
 calculates each site's page rank.
-
-
---------------------------------------------------------------------------------

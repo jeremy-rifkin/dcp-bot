@@ -8,6 +8,3 @@ randomly several times, where each move is a standard knight move
 the board at any point, however, it is not allowed to jump back on.
 
 After k moves, what is the probability that the knight remains on the board?
-
-
---------------------------------------------------------------------------------

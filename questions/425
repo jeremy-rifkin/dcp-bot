@@ -22,6 +22,3 @@ For example, given the following matrix:
 
 
 You should return True, since the bishop is attacking the king diagonally.
-
-
---------------------------------------------------------------------------------

@@ -9,6 +9,3 @@ removed from the board.
 
 Design a class to represent the board, and find a series of steps to bring the
 board to the state [[1, 2, 3], [4, 5, 6], [7, 8, None]].
-
-
---------------------------------------------------------------------------------

@@ -13,11 +13,5 @@ operations are possible:
 Implement a quack using three stacks and O(1) additional memory, so that the
 amortized time for any push, pop, or pull operation is O(1).
 
-
---------------------------------------------------------------------------------
-
-Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d] 
+Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d]
 and skip straight to final interviews with top tech companies!
-
-
---------------------------------------------------------------------------------

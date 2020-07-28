@@ -9,6 +9,3 @@ price), where timestamp is specified in unix epoch time.
 
 Also, provide max(), min(), and average() functions that give the
 max/min/average of all values seen thus far.
-
-
---------------------------------------------------------------------------------

@@ -8,6 +8,3 @@ list and return the head of the list.
 k is guaranteed to be smaller than the length of the list.
 
 Do this in one pass.
-
-
---------------------------------------------------------------------------------

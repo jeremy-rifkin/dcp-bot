@@ -28,6 +28,3 @@ paths = {
 
 In this case, the shortest valid path would be 0 -> 2 -> 4 -> 0, with a distance
 of 28.
-
-
---------------------------------------------------------------------------------

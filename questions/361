@@ -8,7 +8,7 @@ with all distinct digits.
 
 Each turn the first player guesses some number, and the second player responds
 by saying how many digits in this number correctly matched their location in the
-secret code. For example, if the secret code were 123456, then a guess of 175286 
+secret code. For example, if the secret code were 123456, then a guess of 175286
 would score two, since 1 and 6 were correctly placed.
 
 Write an algorithm which, given a sequence of guesses and their scores,
@@ -26,11 +26,5 @@ this case you should return False:
 {123456: 4, 345678: 4, 567890: 4}
 
 
-
---------------------------------------------------------------------------------
-
-Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d] 
+Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d]
 and skip straight to final interviews with top tech companies!
-
-
---------------------------------------------------------------------------------

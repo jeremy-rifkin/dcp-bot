@@ -10,9 +10,9 @@ even number of nodes.
 For example, suppose your input was the following tree:
 
    1
-  / \ 
+  / \
  2   3
-    / \ 
+    / \
    4   5
  / | \
 6  7  8
@@ -22,6 +22,3 @@ In this case, removing the edge (3, 4) satisfies our requirement.
 
 Write a function that returns the maximum number of edges you can remove while
 still satisfying this requirement.
-
-
---------------------------------------------------------------------------------

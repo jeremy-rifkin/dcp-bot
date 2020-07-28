@@ -13,6 +13,3 @@ that the entire expression evaluates to True.
 
 For example, suppose the input is ['F', '|', 'T', '&', 'T']. In this case, there
 are two acceptable groupings: (F | T) & T and F | (T & T).
-
-
---------------------------------------------------------------------------------

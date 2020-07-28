@@ -12,11 +12,5 @@ add_subtract(1)(2)(3) -> 1 + 2 - 3 -> 0
 add_subtract(-5)(10)(3)(9) -> -5 + 10 - 3 + 9 -> 11
 
 
-
---------------------------------------------------------------------------------
-
-Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d] 
+Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d]
 and skip straight to final interviews with top tech companies!
-
-
---------------------------------------------------------------------------------

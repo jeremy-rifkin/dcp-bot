@@ -10,6 +10,3 @@ which is 5.
 
 You can assume that you can do some pre-processing. sum() should be optimized
 over the pre-processing step.
-
-
---------------------------------------------------------------------------------

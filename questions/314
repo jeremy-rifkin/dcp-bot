@@ -13,6 +13,3 @@ would have to be in order for each listener's home to be covered.
 For example, suppose listeners = [1, 5, 11, 20], and towers = [4, 8, 15]. In
 this case the minimum range would be 5, since that would be required for the
 tower at position 15 to reach the listener at position 20.
-
-
---------------------------------------------------------------------------------

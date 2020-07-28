@@ -3,7 +3,7 @@ Good morning! Here's your coding interview problem for today.
 This problem was asked by LinkedIn.
 
 You are given a binary tree in a peculiar string representation. Each node is
-written in the form (lr), where l corresponds to the left child and r 
+written in the form (lr), where l corresponds to the left child and r
 corresponds to the right child.
 
 If either l or r is null, it will be represented as a zero. Otherwise, it will
@@ -17,11 +17,5 @@ Here are a few examples:
 
 Given this representation, determine the depth of the tree.
 
-
---------------------------------------------------------------------------------
-
-Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d] 
+Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d]
 and skip straight to final interviews with top tech companies!
-
-
---------------------------------------------------------------------------------

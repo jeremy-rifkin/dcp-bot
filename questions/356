@@ -6,11 +6,5 @@ Implement a queue using a set of fixed-length arrays.
 
 The queue should support enqueue, dequeue, and get_size operations.
 
-
---------------------------------------------------------------------------------
-
-Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d] 
+Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d]
 and skip straight to final interviews with top tech companies!
-
-
---------------------------------------------------------------------------------

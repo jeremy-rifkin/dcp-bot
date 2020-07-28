@@ -8,6 +8,3 @@ the ceiling is the lowest element in the tree greater than or equal to an
 integer.
 
 If either value does not exist, return None.
-
-
---------------------------------------------------------------------------------

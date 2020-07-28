@@ -11,6 +11,3 @@ can use 5 dimes, 1 nickel, and 1 penny.
 
 Given an array of [5, 8] and an amount 15, return 3 since we can use 5 5-cent
 coins.
-
-
---------------------------------------------------------------------------------

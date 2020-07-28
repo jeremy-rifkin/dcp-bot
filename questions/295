@@ -21,6 +21,3 @@ For example, here are the first few rows:
 Given an input k, return the kth row of Pascal's triangle.
 
 Bonus: Can you do this using only O(k) space?
-
-
---------------------------------------------------------------------------------

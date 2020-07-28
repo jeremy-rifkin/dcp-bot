@@ -8,6 +8,3 @@ downloaded, where M < N. A valid playlist should select each song at least once,
 and guarantee a buffer of B songs between repeats.
 
 Given N, M, and B, determine the number of valid playlists.
-
-
---------------------------------------------------------------------------------

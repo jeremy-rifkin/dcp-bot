@@ -24,6 +24,3 @@ for num in merge_iterators(foo, bar):
 
 
 Bonus: Make it work without pulling in the contents of the iterators in memory.
-
-
---------------------------------------------------------------------------------

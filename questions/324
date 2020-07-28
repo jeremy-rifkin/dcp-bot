@@ -12,6 +12,3 @@ one mouse can fit inside each hole.
 For example, suppose the mice are positioned at [1, 4, 9, 15], and the holes are
 located at [10, -5, 0, 16]. In this case, the best pairing would require us to
 send the mouse at 1 to the hole at -5, so our function should return 6.
-
-
---------------------------------------------------------------------------------

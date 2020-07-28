@@ -19,6 +19,3 @@ Given the list of flights [('A', 'B'), ('A', 'C'), ('B', 'C'), ('C', 'A')] and
 starting airport 'A', you should return the list ['A', 'B', 'C', 'A', 'C'] even
 though ['A', 'C', 'A', 'B', 'C'] is also a valid itinerary. However, the first
 one is lexicographically smaller.
-
-
---------------------------------------------------------------------------------

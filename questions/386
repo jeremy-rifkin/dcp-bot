@@ -7,6 +7,3 @@ characters. If there are multiple possible solutions, return any of them.
 
 For example, given the string tweet, return tteew. eettw would also be
 acceptable.
-
-
---------------------------------------------------------------------------------

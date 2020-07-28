@@ -11,11 +11,5 @@ Create a data structure that performs all the following operations in O(1) time:
  * get_max: Return a key with the highest value.
  * get_min: Return a key with the lowest value.
 
-
---------------------------------------------------------------------------------
-
-Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d] 
+Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d]
 and skip straight to final interviews with top tech companies!
-
-
---------------------------------------------------------------------------------

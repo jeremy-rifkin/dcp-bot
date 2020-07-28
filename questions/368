@@ -18,6 +18,3 @@ kv.update(2, 1)
 
 And then called kv.max_key(1), it should return 2, since it's the largest key
 with value 1.
-
-
---------------------------------------------------------------------------------

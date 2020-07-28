@@ -10,6 +10,3 @@ For example, calling divide(10, 3) should return (3, 1) since the divisor is 3
 and the remainder is 1.
 
 Bonus: Can you do it in O(log n) time?
-
-
---------------------------------------------------------------------------------

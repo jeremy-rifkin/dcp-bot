@@ -11,13 +11,7 @@ Given a set of these ranked lists, interleave them to create a playlist that
 satisfies everyone's priorities.
 
 For example, suppose your input is {[1, 7, 3], [2, 1, 6, 7, 9], [3, 9, 5]}. In
-this case a satisfactory playlist could be [2, 1, 6, 7, 3, 9, 5]. 
+this case a satisfactory playlist could be [2, 1, 6, 7, 3, 9, 5].
 
-
---------------------------------------------------------------------------------
-
-Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d] 
+Ready to interview? Take Triplebyte's quiz [https://triplebyte.com/a/K5Y7dNu/d]
 and skip straight to final interviews with top tech companies!
-
-
---------------------------------------------------------------------------------
