@@ -43,39 +43,23 @@ fn read_input(file_name: &str) -> Result<String, std::io::Error> {
 fn dcp(ctx: &mut Context, msg: &Message) -> CommandResult {
     let num = msg.content.chars().skip(4).collect::<Vec<_>>();
     let string_number: String = String::from_iter(num).trim().to_string();
+    let number_of_questions = fs::read_dir("./questions")
+        .unwrap()
+        .collect::<Vec<_>>()
+        .len();
 
     let result = string_number
         .parse::<i32>()
         .map(|n| read_input(&format!("./questions/{}", n)));
     let response = match result {
         Ok(content) => content.unwrap(),
-        Err(_) => "Couldn't find that question. Try with a number from 1 - 374.".to_string(),
+        Err(_) => format!(
+            "Couldn't find that question. Try with a number from 1 - {}.",
+            number_of_questions
+        ),
     };
 
     msg.reply(&ctx, response);
-
-    // let problem_number = string_number.parse::<i32>();
-
-    // match problem_number {
-    //     Ok(num) => {
-    //         let output = read_input(&format!("./questions/{}", num));
-    //         if output.is_ok() {
-    //             msg.reply(&ctx, format!("Here's question number {}", num))?;
-    //             msg.reply(&ctx, format!("{}", output.unwrap()))?;
-    //         } else {
-    //             msg.reply(&ctx, format!("Question number {} was not found.", num))?;
-    //         }
-    //     }
-    //     Err(_) => {
-    //         msg.reply(
-    //             &ctx,
-    //             format!(
-    //                 "You wanted question number `{}`, but it couldn't be parsed.",
-    //                 string_number
-    //             ),
-    //         )?;
-    //     }
-    // }
 
     Ok(())
 }
