@@ -39,10 +39,14 @@ fn read_input(file_name: &str) -> Result<String, std::io::Error> {
     read_to_string(file_name)
 }
 
+fn fence_string(s: String) -> String {
+    format!("```{}```", s)
+}
+
 #[command]
 fn dcp(ctx: &mut Context, msg: &Message) -> CommandResult {
     let num = msg.content.chars().skip(4).collect::<Vec<_>>();
-    let string_number: String = String::from_iter(num).trim().to_string();
+    let string_number = String::from_iter(num).trim().to_string();
     let number_of_questions = fs::read_dir("./questions")
         .unwrap()
         .collect::<Vec<_>>()
@@ -52,7 +56,7 @@ fn dcp(ctx: &mut Context, msg: &Message) -> CommandResult {
         .parse::<i32>()
         .map(|n| read_input(&format!("./questions/{}", n)));
     let response = match result {
-        Ok(content) => format!("```{}```", content.unwrap()),
+        Ok(content) => fence_string(content.unwrap()),
         Err(_) => format!(
             "Couldn't find that question. Try with a number from 1 - {}.",
             number_of_questions
@@ -66,7 +70,7 @@ fn dcp(ctx: &mut Context, msg: &Message) -> CommandResult {
 
 #[command]
 fn help(ctx: &mut Context, msg: &Message) -> CommandResult {
-    msg.reply(&ctx, format!("I take four commands, starting with the prefix `!`. If you say !dcp `$num` I will try to fetch the daily coding problem that corresponds to that day.If you say !rand, I will find you a random daily coding problem. If you say !list, I will tell you how many questions I have (unfortunately they are not consecutive, so I might have question 1, but not 3.)"))?;
+    msg.reply(&ctx, format!("I take four commands, starting with the prefix `!`. If you say !dcp `$num` I will try to fetch the daily coding problem that corresponds to that day. If you say !rand, I will find you a random daily coding problem. If you say !list, I will tell you how many questions I have (unfortunately they are not consecutive, so I might have question 1, but not 3.)"))?;
 
     Ok(())
 }
@@ -89,9 +93,15 @@ fn rand(ctx: &mut Context, msg: &Message) -> CommandResult {
 
     let question = read_to_string(file_name).unwrap();
 
+    let question_number = &format!("{:?}", file_name)[12..];
+
     msg.reply(
         &ctx,
-        format!("Heres question number {:?}: ```{}```", file_name, question),
+        format!(
+            "Heres question number {}: {}",
+            question_number,
+            fence_string(question)
+        ),
     )?;
 
     Ok(())
