@@ -77,8 +77,6 @@ fn help(ctx: &mut Context, msg: &Message) -> CommandResult {
 
 #[command]
 fn rand(ctx: &mut Context, msg: &Message) -> CommandResult {
-    msg.reply(&ctx, format!("Let me find you a random question."))?;
-
     let mut paths = Vec::new();
 
     for entry in fs::read_dir("./questions")? {
@@ -93,12 +91,12 @@ fn rand(ctx: &mut Context, msg: &Message) -> CommandResult {
 
     let question = read_to_string(file_name).unwrap();
 
-    let question_number = &format!("{:?}", file_name)[12..];
+    let question_number = &format!("{:?}", file_name)[13..];
 
     msg.reply(
         &ctx,
         format!(
-            "Heres question number {}: {}",
+            "Here's question number {}: {}",
             question_number,
             fence_string(question)
         ),
