@@ -52,7 +52,7 @@ fn dcp(ctx: &mut Context, msg: &Message) -> CommandResult {
         .parse::<i32>()
         .map(|n| read_input(&format!("./questions/{}", n)));
     let response = match result {
-        Ok(content) => content.unwrap(),
+        Ok(content) => format!("```{}```", content.unwrap()),
         Err(_) => format!(
             "Couldn't find that question. Try with a number from 1 - {}.",
             number_of_questions
@@ -91,7 +91,7 @@ fn rand(ctx: &mut Context, msg: &Message) -> CommandResult {
 
     msg.reply(
         &ctx,
-        format!("Heres question number {:?}: {}", file_name, question),
+        format!("Heres question number {:?}: ```{}```", file_name, question),
     )?;
 
     Ok(())
