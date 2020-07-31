@@ -69,8 +69,35 @@ fn dcp(ctx: &mut Context, msg: &Message) -> CommandResult {
 }
 
 #[command]
+fn dsp(ctx: &mut Context, msg: &Message) -> CommandResult {
+    let num = msg.content.chars().skip(4).collect::<Vec<_>>();
+    let string_number = String::from_iter(num).trim().to_string();
+    let number_of_questions = fs::read_dir("./dsp").unwrap().collect::<Vec<_>>().len();
+
+    let result = string_number
+        .parse::<i32>()
+        .map(|n| read_input(&format!("./dsp/{}", n)));
+    let response = match result {
+        Ok(content) => fence_string(content.unwrap()),
+        Err(_) => format!(
+            "Couldn't find that question. Try with a number from 1 - {}.",
+            number_of_questions
+        ),
+    };
+
+    msg.reply(&ctx, response);
+
+    Ok(())
+}
+
+#[command]
 fn help(ctx: &mut Context, msg: &Message) -> CommandResult {
-    msg.reply(&ctx, format!("I take four commands, starting with the prefix `!`. If you say !dcp `$num` I will try to fetch the daily coding problem that corresponds to that day. If you say !rand, I will find you a random daily coding problem. If you say !list, I will tell you how many questions I have (unfortunately they are not consecutive, so I might have question 1, but not 3.)"))?;
+    msg.reply(
+        &ctx, format!(r#"I take five commands, starting with the prefix `!`.
+If you say !dcp `$num` I will try to fetch the daily coding problem that corresponds to that day.
+If you say !dsp `$num` I will try to fetch the data science prep problem that corresponds to that day.
+If you say !rand, I will find you a random daily coding problem.
+If you say !list, I will tell you how many questions I have (unfortunately they are not consecutive, so I might have question 1, but not 3.)"#))?;
 
     Ok(())
 }
