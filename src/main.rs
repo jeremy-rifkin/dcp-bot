@@ -12,7 +12,7 @@ use std::fs::read_to_string;
 use std::iter::FromIterator;
 
 #[group]
-#[commands(dcp, list, rand, help)]
+#[commands(dcp, dsp, list, rand, help)]
 struct General;
 
 use std::env;
