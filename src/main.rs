@@ -58,7 +58,7 @@ fn dcp(ctx: &mut Context, msg: &Message) -> CommandResult {
     let response = match result {
         Ok(content) => fence_string(content.unwrap()),
         Err(_) => format!(
-            "Couldn't find that question. Try with a number from 1 - {}.",
+            "Couldn't find that question. Try again with a number from 1 - {}.",
             number_of_questions
         ),
     };
@@ -80,7 +80,7 @@ fn dsp(ctx: &mut Context, msg: &Message) -> CommandResult {
     let response = match result {
         Ok(content) => fence_string(content.unwrap()),
         Err(_) => format!(
-            "Couldn't find that question. Try with a number from 1 - {}.",
+            "Couldn't find that question. Try again with a number from 1 - {}.",
             number_of_questions
         ),
     };
